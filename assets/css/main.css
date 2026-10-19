@@ -258,12 +258,12 @@ p:last-child { margin-bottom: 0; }
   width: 100%;
   height: 100%;
   object-fit: cover;
-  z-index: 0;
+  z-index: 1; /* above slides so video plays over the poster images */
 }
 .hero-slides {
   position: absolute;
   inset: 0;
-  z-index: 0;
+  z-index: 0; /* behind video — acts as poster/fallback while video loads */
 }
 .hero-slide {
   position: absolute;
@@ -278,11 +278,11 @@ p:last-child { margin-bottom: 0; }
   position: absolute;
   inset: 0;
   background: linear-gradient(135deg, rgba(3,61,90,.82) 0%, rgba(7,108,156,.55) 100%);
-  z-index: 1;
+  z-index: 2; /* above video */
 }
 .hero-content {
   position: relative;
-  z-index: 2;
+  z-index: 3; /* above overlay (z:2) */
   max-width: 700px;
 }
 .hero-tagline {
