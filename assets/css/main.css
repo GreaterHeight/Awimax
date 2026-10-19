@@ -180,9 +180,14 @@ p:last-child { margin-bottom: 0; }
   transition: color .15s;
   white-space: nowrap;
 }
-.nav-links > li > a:hover,
+.nav-links > li > a:hover {
+  color: var(--blue);
+}
+/* Active/current page: amber underline + amber text for clear visual distinction */
 .nav-links > li.active > a {
   color: var(--blue);
+  border-bottom: 2px solid var(--amber);
+  padding-bottom: calc(.5rem - 2px);  /* compensate for border */
 }
 .nav-links > li.has-dropdown > a::after {
   content: ' ▾';
@@ -1586,26 +1591,42 @@ p:last-child { margin-bottom: 0; }
 }
 
 /* ── Sticky / shrinking header ──────────────────────────────── */
+/* Keep position:fixed from the original block; only add transitions + scroll state */
 .site-header {
-  position: sticky;
-  top: 0;
-  z-index: 1000;
-  transition: padding var(--t-base), box-shadow var(--t-base), background var(--t-base);
-  will-change: padding, box-shadow;
+  transition: height var(--t-base), box-shadow var(--t-base), background var(--t-base);
+  will-change: height, box-shadow, background;
 }
 .site-header.scrolled {
-  padding-top: 0.4rem;
-  padding-bottom: 0.4rem;
-  box-shadow: 0 2px 16px rgba(0,0,0,.18);
+  height: 56px;               /* shrink from 72px */
+  box-shadow: 0 2px 16px rgba(0,0,0,.22);
   background: rgba(7, 108, 156, 0.97);
   backdrop-filter: blur(4px);
 }
-.site-header.scrolled .logo img {
+
+/* ── Nav text: white when header is scrolled (dark bg) ────────── */
+.site-header.scrolled .nav-links > li > a {
+  color: #fff;
+  font-size: .85rem;
+}
+.site-header.scrolled .nav-links > li > a:hover,
+.site-header.scrolled .nav-links > li.active > a {
+  color: var(--amber);      /* amber accent for active + hover — visible on blue */
+}
+/* Keep dropdown white even when scrolled */
+.site-header.scrolled .nav-dropdown {
+  background: var(--white);
+}
+.site-header.scrolled .nav-dropdown li a {
+  color: var(--dark);
+}
+/* Hamburger icon lines → white */
+.site-header.scrolled .nav-toggle span {
+  background: #fff;
+}
+/* Logo: compact when scrolled */
+.site-header.scrolled .nav-logo img {
   height: 38px;
   transition: height var(--t-base);
-}
-.site-header.scrolled .nav-link {
-  font-size: .82rem;
 }
 
 /* ── Back-to-top button ─────────────────────────────────────── */
