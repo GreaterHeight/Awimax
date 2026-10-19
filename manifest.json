@@ -1,0 +1,22 @@
+{
+  "name": "Awimax Energy Limited",
+  "short_name": "Awimax",
+  "description": "EPCIC Oil & Gas services in Nigeria",
+  "start_url": "/",
+  "display": "browser",
+  "orientation": "any",
+  "theme_color": "#076c9c",
+  "background_color": "#1c2b35",
+  "icons": [
+    {
+      "src": "/assets/images/AWIMAX.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "/assets/images/AWIMAX.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}

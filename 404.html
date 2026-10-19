@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Page Not Found | Awimax Energy Limited</title>
+  <meta name="robots" content="noindex">
+  <link rel="stylesheet" href="/assets/css/main.css">
+  <style>
+    .not-found-hero {
+      min-height: 70vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      text-align: center;
+      padding: 4rem 1.5rem;
+      background: var(--blue-dark);
+      color: #fff;
+    }
+    .not-found-code {
+      font-size: clamp(5rem, 18vw, 10rem);
+      font-weight: 900;
+      line-height: 1;
+      color: var(--amber);
+      letter-spacing: -0.04em;
+      margin-bottom: 0;
+    }
+    .not-found-msg {
+      font-size: 1.25rem;
+      opacity: .85;
+      margin: 1rem 0 2.5rem;
+      max-width: 480px;
+    }
+    .not-found-links { display: flex; gap: 1rem; flex-wrap: wrap; justify-content: center; }
+  </style>
+</head>
+<body>
+  <a href="#main" class="skip-link">Skip to content</a>
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="logo" href="/index.html">
+        <img src="/assets/images/AWIMAX.png" alt="Awimax Energy Limited" height="52">
+      </a>
+    </div>
+  </header>
+
+  <main id="main">
+    <div class="not-found-hero">
+      <p class="not-found-code">404</p>
+      <p class="not-found-msg">The page you're looking for doesn't exist or has been moved.</p>
+      <div class="not-found-links">
+        <a href="/index.html" class="btn btn-primary">Go to Homepage</a>
+        <a href="/contact/index.html" class="btn btn-outline" style="border-color:rgba(255,255,255,.5);color:#fff;">Contact Us</a>
+      </div>
+    </div>
+
+    <section class="section" style="background:var(--light-bg);">
+      <div class="container" style="max-width:720px;text-align:center;">
+        <h2 class="section-title">You might be looking for&hellip;</h2>
+        <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(160px,1fr));gap:1rem;margin-top:2rem;">
+          <a href="/services/index.html" class="btn btn-outline">Our Services</a>
+          <a href="/products/index.html" class="btn btn-outline">Products</a>
+          <a href="/projects/index.html" class="btn btn-outline">Projects</a>
+          <a href="/hse/index.html" class="btn btn-outline">HSE</a>
+          <a href="/news/index.html" class="btn btn-outline">News & Events</a>
+          <a href="/about/team.html" class="btn btn-outline">Management Team</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-bottom" style="text-align:center;padding:1.5rem 0;">
+      <p style="opacity:.6;font-size:.85rem;">&copy; 2024 Awimax Energy Limited. All rights reserved.</p>
+    </div>
+  </footer>
+</body>
+</html>

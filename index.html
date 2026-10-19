@@ -10,6 +10,43 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="assets/css/main.css">
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="Awimax Energy Limited">
+    <meta property="og:title" content="Home | Awimax Energy Limited">
+    <meta property="og:description" content="Awimax Energy Limited — EPCIC Oil & Gas services in Nigeria. Engineering, Procurement, Construction, Installation and Commissioning specialists.">
+    <meta property="og:image" content="https://www.awimax.com/assets/images/banners/og-image.webp">
+    <meta property="og:url" content="https://www.awimax.com/">
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Home | Awimax Energy Limited">
+    <meta name="twitter:description" content="Awimax Energy Limited — EPCIC Oil & Gas services in Nigeria.">
+    <meta name="twitter:image" content="https://www.awimax.com/assets/images/banners/og-image.webp">
+    <!-- PWA -->
+    <link rel="manifest" href="manifest.json">
+    <meta name="theme-color" content="#076c9c">
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Organization",
+      "name": "Awimax Energy Limited",
+      "url": "https://www.awimax.com",
+      "logo": "https://www.awimax.com/assets/images/AWIMAX.png",
+      "description": "EPCIC Oil & Gas services in Nigeria — Engineering, Procurement, Construction, Installation and Commissioning.",
+      "address": {
+        "@type": "PostalAddress",
+        "addressCountry": "NG"
+      },
+      "contactPoint": {
+        "@type": "ContactPoint",
+        "contactType": "customer service",
+        "url": "https://www.awimax.com/contact/"
+      }
+    }
+    </script>
+    <link rel="preload" as="video" href="assets/video/Awimax-Home-Banner-Video2.mp4" type="video/mp4">
+    <link rel="preload" as="image" href="assets/images/banners/02cf9c8c-2224-44f4-b691-eaf6b60edb6b_resized.webp" imagesizes="100vw">
 </head>
 <body>
 
@@ -18,7 +55,7 @@
   <div class="container">
     <nav class="nav-inner" role="navigation" aria-label="Main navigation">
       <a class="nav-logo" href="index.html">
-        <img src="assets/images/logo.png" alt="Awimax Energy Limited">
+        <img src="assets/images/logo.webp" alt="Awimax Energy Limited">
       </a>
       <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">
         <span></span><span></span><span></span>
@@ -26,42 +63,42 @@
       <ul class="nav-links">
         <li class="active"><a href="index.html">Home</a></li>
         <li class="has-dropdown">
-          <a href="brief-history.html">About Us</a>
+          <a href="about/history.html">About Us</a>
           <ul class="nav-dropdown">
-            <li><a href="brief-history.html">Brief History</a></li>
-            <li><a href="partners.html">Partners &amp; Client</a></li>
-            <li><a href="our-team.html">Management Team</a></li>
-            <li><a href="foundation.html">Awimax Foundation</a></li>
+            <li><a href="about/history.html">Brief History</a></li>
+            <li><a href="about/partners.html">Partners &amp; Client</a></li>
+            <li><a href="about/team.html">Management Team</a></li>
+            <li><a href="about/foundation.html">Awimax Foundation</a></li>
           </ul>
         </li>
-        <li><a href="services.html">Services</a></li>
-        <li><a href="products.html">Our Products</a></li>
+        <li><a href="services/">Services</a></li>
+        <li><a href="products/">Our Products</a></li>
         <li class="has-dropdown">
-          <a href="projects.html">Projects</a>
+          <a href="projects/">Projects</a>
           <ul class="nav-dropdown">
-            <li><a href="projects.html">Projects</a></li>
-            <li><a href="projects-gallery.html">Projects Gallery</a></li>
+            <li><a href="projects/">Projects</a></li>
+            <li><a href="projects/gallery.html">Projects Gallery</a></li>
           </ul>
         </li>
-        <li><a href="hse.html">HSE</a></li>
-        <li><a href="news.html">News &amp; Events</a></li>
-        <li><a href="contact.html">Contact</a></li>
+        <li><a href="hse/">HSE</a></li>
+        <li><a href="news/">News &amp; Events</a></li>
+        <li><a href="contact/">Contact</a></li>
       </ul>
     </nav>
   </div>
 </header>
 
 <!-- ============ HERO ============ -->
-<section class="hero">
-  <video class="hero-video" autoplay muted loop playsinline poster="assets/images/banners/02cf9c8c-2224-44f4-b691-eaf6b60edb6b_resized.png">
+<section class="hero" data-reveal>
+  <video class="hero-video" autoplay muted loop playsinline poster="assets/images/banners/02cf9c8c-2224-44f4-b691-eaf6b60edb6b_resized.webp">
     <source src="assets/video/Awimax-Home-Banner-Video2.mp4" type="video/mp4">
   </video>
   <div class="hero-slides">
-    <div class="hero-slide active" style="background-image:url('assets/images/banners/02cf9c8c-2224-44f4-b691-eaf6b60edb6b_resized.png')"></div>
-    <div class="hero-slide" style="background-image:url('assets/images/banners/56bcbe55-5be4-4445-9f6d-e699d717f426_resized.png')"></div>
-    <div class="hero-slide" style="background-image:url('assets/images/banners/91e4eaf4-77a2-4a57-8188-677122bcfd75_resized.png')"></div>
-    <div class="hero-slide" style="background-image:url('assets/images/banners/acf04f3b-8437-4fb3-b7e6-c082e121a12a_resized.png')"></div>
-    <div class="hero-slide" style="background-image:url('assets/images/banners/da2d7fe5-944a-460e-968d-9e5cb3ef47ca_resized.png')"></div>
+    <div class="hero-slide active" style="background-image:url('assets/images/banners/02cf9c8c-2224-44f4-b691-eaf6b60edb6b_resized.webp')"></div>
+    <div class="hero-slide" style="background-image:url('assets/images/banners/56bcbe55-5be4-4445-9f6d-e699d717f426_resized.webp')"></div>
+    <div class="hero-slide" style="background-image:url('assets/images/banners/91e4eaf4-77a2-4a57-8188-677122bcfd75_resized.webp')"></div>
+    <div class="hero-slide" style="background-image:url('assets/images/banners/acf04f3b-8437-4fb3-b7e6-c082e121a12a_resized.webp')"></div>
+    <div class="hero-slide" style="background-image:url('assets/images/banners/da2d7fe5-944a-460e-968d-9e5cb3ef47ca_resized.webp')"></div>
   </div>
   <div class="hero-overlay"></div>
   <div class="container">
@@ -70,8 +107,8 @@
       <h1>Engineering Energy Solutions Across West Africa</h1>
       <p class="hero-sub">Awimax Energy Limited delivers world-class Engineering, Procurement, Construction, Installation and Commissioning services for the oil &amp; gas industry.</p>
       <div class="hero-ctas">
-        <a href="services.html" class="btn btn-primary">Our Services</a>
-        <a href="contact.html" class="btn btn-outline">Get in Touch</a>
+        <a href="services/" class="btn btn-primary">Our Services</a>
+        <a href="contact/" class="btn btn-outline">Get in Touch</a>
       </div>
     </div>
   </div>
@@ -85,7 +122,7 @@
 </section>
 
 <!-- ============ ABOUT INTRO ============ -->
-<section class="section">
+<section class="section" data-reveal>
   <div class="container">
     <div class="intro-grid">
       <div class="intro-text">
@@ -108,10 +145,10 @@
             <div class="stat-label">Expert Engineers</div>
           </div>
         </div>
-        <a href="brief-history.html" class="btn btn-primary mt-4">Learn Our Story</a>
+        <a href="about/history.html" class="btn btn-primary mt-4">Learn Our Story</a>
       </div>
       <div class="intro-img">
-        <img src="assets/images/Awimax-Home-AboutUs-EPCIC.png" alt="Awimax EPCIC Operations" loading="lazy">
+        <img src="assets/images/Awimax-Home-AboutUs-EPCIC.webp" alt="Awimax EPCIC Operations" loading="lazy">
         <div class="intro-badge">
           <strong>DPR</strong>
           <span>Licensed &amp; Certified</span>
@@ -122,7 +159,7 @@
 </section>
 
 <!-- ============ SERVICES ============ -->
-<section class="section section-alt">
+<section class="section section-alt" data-reveal>
   <div class="container">
     <div class="section-heading-group text-center">
       <span class="section-label">What We Do</span>
@@ -181,13 +218,13 @@
 
     </div>
     <div class="text-center mt-4">
-      <a href="services.html" class="btn btn-primary">View All Services</a>
+      <a href="services/" class="btn btn-primary">View All Services</a>
     </div>
   </div>
 </section>
 
 <!-- ============ PRODUCTS PREVIEW ============ -->
-<section class="section">
+<section class="section" data-reveal>
   <div class="container">
     <div class="section-heading-group">
       <span class="section-label">Our Products</span>
@@ -197,7 +234,7 @@
     <div class="products-grid">
       <div class="product-card">
         <div class="product-card-img">
-          <img src="assets/images/Awimax-Air_Compressor.png" alt="Air Compressor" loading="lazy">
+          <img src="assets/images/Awimax-Air_Compressor.webp" alt="Air Compressor" loading="lazy">
         </div>
         <div class="product-card-body">
           <h3>Air Compressor</h3>
@@ -206,7 +243,7 @@
       </div>
       <div class="product-card">
         <div class="product-card-img">
-          <img src="assets/images/Awimax-Cylinder_Carrier.png" alt="Cylinder Carrier" loading="lazy">
+          <img src="assets/images/Awimax-Cylinder_Carrier.webp" alt="Cylinder Carrier" loading="lazy">
         </div>
         <div class="product-card-body">
           <h3>Cylinder Carrier</h3>
@@ -215,7 +252,7 @@
       </div>
       <div class="product-card">
         <div class="product-card-img">
-          <img src="assets/images/Awimax-Foam_Mobile_Unit.png" alt="Foam Mobile Unit" loading="lazy">
+          <img src="assets/images/Awimax-Foam_Mobile_Unit.webp" alt="Foam Mobile Unit" loading="lazy">
         </div>
         <div class="product-card-body">
           <h3>Foam Mobile Unit</h3>
@@ -224,7 +261,7 @@
       </div>
       <div class="product-card">
         <div class="product-card-img">
-          <img src="assets/images/Awimax-Excess_Flow_Valves.png" alt="Excess Flow Valves" loading="lazy">
+          <img src="assets/images/Awimax-Excess_Flow_Valves.webp" alt="Excess Flow Valves" loading="lazy">
         </div>
         <div class="product-card-body">
           <h3>Excess Flow Valves</h3>
@@ -233,13 +270,13 @@
       </div>
     </div>
     <div class="text-center mt-4">
-      <a href="products.html" class="btn btn-primary">View All Products</a>
+      <a href="products/" class="btn btn-primary">View All Products</a>
     </div>
   </div>
 </section>
 
 <!-- ============ PROJECTS HIGHLIGHT ============ -->
-<section class="section section-alt">
+<section class="section section-alt" data-reveal>
   <div class="container">
     <div class="section-heading-group text-center">
       <span class="section-label">Our Work</span>
@@ -249,7 +286,7 @@
     <div class="products-grid">
       <div class="product-card">
         <div class="product-card-img">
-          <img src="assets/images/Awimax-Home-10MT-LPG-Abia-State.png" alt="10MT LPG Plant Abia State" loading="lazy">
+          <img src="assets/images/Awimax-Home-10MT-LPG-Abia-State.webp" alt="10MT LPG Plant Abia State" loading="lazy">
         </div>
         <div class="product-card-body">
           <h3>10MT LPG Plant — Abia State</h3>
@@ -258,7 +295,7 @@
       </div>
       <div class="product-card">
         <div class="product-card-img">
-          <img src="assets/images/Awimax-Home-Bitumen-Metering-System.png" alt="Bitumen Metering System" loading="lazy">
+          <img src="assets/images/Awimax-Home-Bitumen-Metering-System.webp" alt="Bitumen Metering System" loading="lazy">
         </div>
         <div class="product-card-body">
           <h3>Bitumen Metering System</h3>
@@ -267,7 +304,7 @@
       </div>
       <div class="product-card">
         <div class="product-card-img">
-          <img src="assets/images/Awimax-Home-120MT-LPG-Plant-Somalia.png" alt="120MT LPG Plant Somalia" loading="lazy">
+          <img src="assets/images/Awimax-Home-120MT-LPG-Plant-Somalia.webp" alt="120MT LPG Plant Somalia" loading="lazy">
         </div>
         <div class="product-card-body">
           <h3>120MT LPG Plant — Somalia</h3>
@@ -276,7 +313,7 @@
       </div>
       <div class="product-card">
         <div class="product-card-img">
-          <img src="assets/images/Awimax-Home-Construction-Storage-Tank-Farm-Services.png" alt="Storage Tank Farm" loading="lazy">
+          <img src="assets/images/Awimax-Home-Construction-Storage-Tank-Farm-Services.webp" alt="Storage Tank Farm" loading="lazy">
         </div>
         <div class="product-card-body">
           <h3>Storage Tank Farm Construction</h3>
@@ -285,14 +322,14 @@
       </div>
     </div>
     <div class="text-center mt-4">
-      <a href="projects.html" class="btn btn-primary">View All Projects</a>
-      <a href="projects-gallery.html" class="btn btn-outline" style="margin-left:1rem;border-color:var(--blue);color:var(--blue);">Projects Gallery</a>
+      <a href="projects/" class="btn btn-primary">View All Projects</a>
+      <a href="projects/gallery.html" class="btn btn-outline" style="margin-left:1rem;border-color:var(--blue);color:var(--blue);">Projects Gallery</a>
     </div>
   </div>
 </section>
 
 <!-- ============ CERTIFICATIONS ============ -->
-<section class="section section-blue">
+<section class="section section-blue" data-reveal>
   <div class="container">
     <div class="section-heading-group text-center">
       <span class="section-label" style="color:rgba(255,255,255,.7)">Verified &amp; Accredited</span>
@@ -308,19 +345,19 @@
       <div class="cert-card">
         <h3>Quality Management</h3>
         <p>Our operations are governed by strict quality management systems aligned with international best practices.</p>
-        <a href="brief-history.html" class="btn btn-outline">Learn More</a>
+        <a href="about/history.html" class="btn btn-outline">Learn More</a>
       </div>
       <div class="cert-card">
         <h3>HSE Compliant</h3>
         <p>Committed to Health, Safety and Environment standards across all project sites and operations.</p>
-        <a href="hse.html" class="btn btn-outline">Our HSE Policy</a>
+        <a href="hse/" class="btn btn-outline">Our HSE Policy</a>
       </div>
     </div>
   </div>
 </section>
 
 <!-- ============ NEWS PREVIEW ============ -->
-<section class="section">
+<section class="section" data-reveal>
   <div class="container">
     <div class="section-heading-group">
       <span class="section-label">Latest Updates</span>
@@ -330,7 +367,7 @@
     <div class="news-grid">
       <div class="news-card">
         <div class="news-card-img">
-          <img src="assets/images/Awimax-Home-Bitumen-Metering-System.png" alt="New Bitumen Depot" loading="lazy">
+          <img src="assets/images/Awimax-Home-Bitumen-Metering-System.webp" alt="New Bitumen Depot" loading="lazy">
         </div>
         <div class="news-card-body">
           <div class="news-meta"><span class="tag">Project</span> 2024</div>
@@ -341,7 +378,7 @@
       </div>
       <div class="news-card">
         <div class="news-card-img">
-          <img src="assets/images/Awimax-Projects-MOB-Integrated-Services-LPG-Storage-Tank.jpeg" alt="MOB Integrated Services" loading="lazy">
+          <img src="assets/images/Awimax-Projects-MOB-Integrated-Services-LPG-Storage-Tank.webp" alt="MOB Integrated Services" loading="lazy">
         </div>
         <div class="news-card-body">
           <div class="news-meta"><span class="tag">Project</span> 2024</div>
@@ -352,7 +389,7 @@
       </div>
       <div class="news-card">
         <div class="news-card-img">
-          <img src="assets/images/Upgrade-Of-38-Million-Litres-Azman1.jpg" alt="Azman Oil and Gas" loading="lazy">
+          <img src="assets/images/Upgrade-Of-38-Million-Litres-Azman1.webp" alt="Azman Oil and Gas" loading="lazy">
         </div>
         <div class="news-card-body">
           <div class="news-meta"><span class="tag">Project</span> 2024</div>
@@ -363,17 +400,17 @@
       </div>
     </div>
     <div class="text-center mt-4">
-      <a href="news.html" class="btn btn-primary">All News &amp; Events</a>
+      <a href="news/" class="btn btn-primary">All News &amp; Events</a>
     </div>
   </div>
 </section>
 
 <!-- ============ CTA BAND ============ -->
-<section class="cta-band">
+<section class="cta-band" data-reveal>
   <div class="container">
     <h2>Ready to Start Your Project?</h2>
     <p>Contact our team today for a consultation. We bring over 15 years of EPCIC expertise to every engagement.</p>
-    <a href="contact.html" class="btn btn-amber">Get in Touch</a>
+    <a href="contact/" class="btn btn-amber">Get in Touch</a>
   </div>
 </section>
 
@@ -382,29 +419,29 @@
   <div class="container">
     <div class="footer-grid">
       <div class="footer-brand">
-        <img src="assets/images/logo.png" alt="Awimax Energy Limited">
+        <img src="assets/images/logo.webp" alt="Awimax Energy Limited">
         <p>A leading EPCIC oil &amp; gas company delivering engineering, procurement, construction, installation and commissioning services across Nigeria and West Africa.</p>
       </div>
       <div class="footer-col">
         <h4>Quick Links</h4>
         <ul>
           <li><a href="index.html">Home</a></li>
-          <li><a href="brief-history.html">About Us</a></li>
-          <li><a href="services.html">Services</a></li>
-          <li><a href="products.html">Our Products</a></li>
-          <li><a href="projects.html">Projects</a></li>
-          <li><a href="hse.html">HSE</a></li>
+          <li><a href="about/history.html">About Us</a></li>
+          <li><a href="services/">Services</a></li>
+          <li><a href="products/">Our Products</a></li>
+          <li><a href="projects/">Projects</a></li>
+          <li><a href="hse/">HSE</a></li>
         </ul>
       </div>
       <div class="footer-col">
         <h4>Company</h4>
         <ul>
-          <li><a href="our-team.html">Management Team</a></li>
-          <li><a href="foundation.html">Awimax Foundation</a></li>
-          <li><a href="partners.html">Partners &amp; Clients</a></li>
-          <li><a href="news.html">News &amp; Events</a></li>
-          <li><a href="contact.html">Contact Us</a></li>
-          <li><a href="privacy.html">Privacy Policy</a></li>
+          <li><a href="about/team.html">Management Team</a></li>
+          <li><a href="about/foundation.html">Awimax Foundation</a></li>
+          <li><a href="about/partners.html">Partners &amp; Clients</a></li>
+          <li><a href="news/">News &amp; Events</a></li>
+          <li><a href="contact/">Contact Us</a></li>
+          <li><a href="legal/privacy.html">Privacy Policy</a></li>
         </ul>
       </div>
       <div class="footer-col">
@@ -429,11 +466,14 @@
   <div class="footer-bar">
     <div class="container" style="display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:.5rem;width:100%">
       <span>&copy; 2024 Awimax Energy Limited. All rights reserved.</span>
-      <span><a href="privacy.html">Privacy Policy</a> &middot; <a href="terms.html">Terms of Use</a></span>
+      <span><a href="legal/privacy.html">Privacy Policy</a> &middot; <a href="legal/terms.html">Terms of Use</a></span>
     </div>
   </div>
 </footer>
 
 <script src="assets/js/main.js"></script>
+
+    <!-- Back to top -->
+    <button class="back-to-top" id="backToTop" aria-label="Back to top">&#8679;</button>
 </body>
 </html>
